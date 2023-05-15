@@ -1,6 +1,7 @@
 # project-management-system
 
 ## Below is the list of features of the system:
+
 ### Student Features:
 1. Students should be able to log in to the system with their credentials.
 2. Students should be able to check available projects for a class.
