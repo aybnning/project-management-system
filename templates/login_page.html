@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Log in | eLMS</title>
+      <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/icon/apple-touch-icon.png' %}">
+      <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/icon/favicon-32x32.png' %}">
+      <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/icon/favicon-16x16.png' %}">
+      <link rel="manifest" href="{% static 'images/icon/site.webmanifest' %}">
+      <link rel="stylesheet" href="{% static 'styles/bootstrap.min.css' %}">
+      <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+      <link rel="stylesheet" href="{% static 'styles/style-login.css' %}">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+      <style>
+         .buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+         }
+
+         .signin-image {
+            flex: 1;
+            margin-bottom: 1rem;
+         }
+
+         .button-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+         }
+
+         .button-wrapper a {
+            margin-bottom: 1rem;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="main">
+         <section class="sign-in">
+            <div class="container">
+               <div class="signin-content">
+{#                  <div class="buttons-container">#}
+{#                     <div class="signin-image">#}
+{#                        <figure><img src="{% static 'images/logo.jpeg' %}" alt="sing up image"></figure>#}
+{#                     </div>#}
+{#                     <div class="button-wrapper">#}
+{#                        <a href="/admin" target="_blank" class="btn info custom-btn-margin">Sign in as Admin</a>#}
+{#                        <a href="/login_student" target="_blank" class="btn info custom-btn-margin">Sign in as Student</a>#}
+{#                        <a href="/login_faculty" target="_blank" class="btn info custom-btn-margin">Sign in as Faculty</a>#}
+{#                     </div>#}
+{#                  </div>#}
+                   <div class="buttons-container">
+                        <div class="signin-image">
+                            <figure><img src="{% static 'images/logo.jpeg' %}" alt="sing up image"></figure>
+                        </div>
+                        <div class="buttons-right">
+                            <a href="/admin" target="_blank" class="btn info custom-btn-margin">Sign in as Admin</a>
+                            <a href="/login_student" target="_blank" class="btn info custom-btn-margin">Sign in as Student</a>
+                            <a href="/login_faculty" target="_blank" class="btn info custom-btn-margin">Sign in as Faculty</a>
+                        </div>
+                   </div>
+               </div>
+            </div>
+         </section>
+      </div>
+      <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+      <script>
+         if (window.history.replaceState) {
+             window.history.replaceState(null, null, window.location.href);
+         }
+      </script>
+   </body>
+</html>
